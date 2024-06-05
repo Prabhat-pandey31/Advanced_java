@@ -1,0 +1,43 @@
+package in.sp.backend;
+
+import java.io.IOException;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/regForm")
+public class Register extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // Retrieve form data
+        String name = req.getParameter("name");
+        String email = req.getParameter("email");
+        String password = req.getParameter("pass");
+        String gender = req.getParameter("gender");
+        String city = req.getParameter("city");
+
+        // You can add validation, database interaction, or any other logic here
+        // For now, let's just print the received data to the console
+        System.out.println("Name: " + name);
+        System.out.println("Email: " + email);
+        System.out.println("Password: " + password);
+        System.out.println("Gender: " + gender);
+        System.out.println("City: " + city);
+
+        // Respond to the client
+        resp.setContentType("text/html");
+        resp.setCharacterEncoding("UTF-8");
+        resp.getWriter().write("<html><body>");
+        resp.getWriter().write("<h1>Registration Successful</h1>");
+        resp.getWriter().write("<p>Name: " + name + "</p>");
+        resp.getWriter().write("<p>Email: " + email + "</p>");
+        resp.getWriter().write("<p>Gender: " + gender + "</p>");
+        resp.getWriter().write("<p>City: " + city + "</p>");
+        resp.getWriter().write("</body></html>");
+    }
+}
+

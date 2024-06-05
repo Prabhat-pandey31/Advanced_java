@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+repositories/https\:__download.eclipse.org_eclipse_updates_4.31/count=1
+repositories/https\:__download.eclipse.org_eclipse_updates_4.31/enabled=true
+repositories/https\:__download.eclipse.org_eclipse_updates_4.31/isSystem=false
+repositories/https\:__download.eclipse.org_eclipse_updates_4.31/nickname=The Eclipse Project Updates
+repositories/https\:__download.eclipse.org_eclipse_updates_4.31/uri=https\://download.eclipse.org/eclipse/updates/4.31
+repositories/https\:__download.eclipse.org_releases_2024-03/count=1
+repositories/https\:__download.eclipse.org_releases_2024-03/enabled=true
+repositories/https\:__download.eclipse.org_releases_2024-03/isSystem=false
+repositories/https\:__download.eclipse.org_releases_2024-03/nickname=2024-03
+repositories/https\:__download.eclipse.org_releases_2024-03/uri=https\://download.eclipse.org/releases/2024-03
